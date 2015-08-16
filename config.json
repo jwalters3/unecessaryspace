@@ -1,9 +1,12 @@
 {
+  "ignore": [
+    "**.unpub"
+  ],
   "locals": {
-    "url": "http://localhost:8080",
-    "name": "The Wintersmith's blog",
-    "owner": "Someone",
-    "description": "Ramblings of an immor(t)al demigod"
+    "url": "http://unnecessary.space",
+    "name": "Unnecessary Space",
+    "owner": "Jeff Walters",
+    "description": "Random terrible thoughts on everything."
   },
   "plugins": [
     "./plugins/paginator.coffee"
