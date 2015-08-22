@@ -30,7 +30,7 @@
 The theme used is tomorrow, you can find more themes &lt;a href=&quot;http://jmblog.github.io/color-themes-for-highlightjs/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&quot;javascript&quot;&gt;JavaScript&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;getRandomNumber&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; {&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;getRandomNumber&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;{
     &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;; &lt;span class=&quot;comment&quot;&gt;// chosen by fair dice roll.&lt;/span&gt;
               &lt;span class=&quot;comment&quot;&gt;// guaranteed to be random.&lt;/span&gt;
 }
@@ -38,63 +38,63 @@ The theme used is tomorrow, you can find more themes &lt;a href=&quot;http://jmb
 &lt;h3 id=&quot;coffeescript&quot;&gt;CoffeeScript&lt;/h3&gt;
 &lt;pre&gt;&lt;code class=&quot;lang-coffeescript&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Animal&lt;/span&gt;&lt;/span&gt;
   &lt;span class=&quot;comment&quot;&gt;### Intellegent design ###&lt;/span&gt;
-  &lt;span class=&quot;attribute&quot;&gt;getDNA&lt;/span&gt;:&lt;span class=&quot;function&quot;&gt; -&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;attribute&quot;&gt;getDNA&lt;/span&gt;: &lt;span class=&quot;function&quot;&gt;-&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;'sequencing...'&lt;/span&gt;
     &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;
       sleep &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;
 
 &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Monkey&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Animal&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;attribute&quot;&gt;speak&lt;/span&gt;:&lt;span class=&quot;function&quot;&gt; -&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;attribute&quot;&gt;speak&lt;/span&gt;: &lt;span class=&quot;function&quot;&gt;-&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;'ah ah ah'&lt;/span&gt;
 
 &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Human&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Monkey&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;attribute&quot;&gt;speak&lt;/span&gt;:&lt;span class=&quot;function&quot;&gt; -&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;attribute&quot;&gt;speak&lt;/span&gt;: &lt;span class=&quot;function&quot;&gt;-&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt; [&lt;span class=&quot;string&quot;&gt;'yolo'&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;unless&lt;/span&gt; i % &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;] + [&lt;span class=&quot;string&quot;&gt;'swag'&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;unless&lt;/span&gt; i % &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;] &lt;span class=&quot;keyword&quot;&gt;or&lt;/span&gt; i &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; [&lt;span class=&quot;number&quot;&gt;1.&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;.100&lt;/span&gt;]
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&quot;rust&quot;&gt;Rust&lt;/h3&gt;
 &lt;pre&gt;&lt;code class=&quot;lang-rust&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;use&lt;/span&gt; std;
 
-&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;(&lt;/span&gt;) {
+&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;/span&gt;() {
   &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; program = &lt;span class=&quot;string&quot;&gt;&quot;+ + * - /&quot;&lt;/span&gt;;
   &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;mut&lt;/span&gt; accumulator = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;
 
-  &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; token in program.chars() {
+  &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; token &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; program.chars() {
     &lt;span class=&quot;keyword&quot;&gt;match&lt;/span&gt; token {
       &lt;span class=&quot;string&quot;&gt;'+'&lt;/span&gt; =&amp;gt; accumulator += &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,
       &lt;span class=&quot;string&quot;&gt;'-'&lt;/span&gt; =&amp;gt; accumulator -= &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,
       &lt;span class=&quot;string&quot;&gt;'*'&lt;/span&gt; =&amp;gt; accumulator *= &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,
       &lt;span class=&quot;string&quot;&gt;'/'&lt;/span&gt; =&amp;gt; accumulator /= &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,
-      &lt;span class=&quot;number&quot;&gt;_&lt;/span&gt; =&amp;gt; { &lt;span class=&quot;comment&quot;&gt;/* ignore everything else */&lt;/span&gt; }
+      _ =&amp;gt; { &lt;span class=&quot;comment&quot;&gt;/* ignore everything else */&lt;/span&gt; }
     }
   }
 
-  println!(&lt;span class=&quot;string&quot;&gt;&quot;The program \&quot;{}\&quot; calculates the value {}&quot;&lt;/span&gt;,
+  &lt;span class=&quot;built_in&quot;&gt;println!&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;The program \&quot;{}\&quot; calculates the value {}&quot;&lt;/span&gt;,
       program, accumulator);
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&quot;c&quot;&gt;C&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-c&quot;&gt;&lt;span class=&quot;preprocessor&quot;&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-c&quot;&gt;&lt;span class=&quot;preprocessor&quot;&gt;#&lt;span class=&quot;keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;
 
-&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; main(&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt;)
-{
+&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt;)&lt;/span&gt;
+&lt;/span&gt;{
   &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;Hello world\n&quot;&lt;/span&gt;);
   &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&quot;c-&quot;&gt;C++&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-cpp&quot;&gt;&lt;span class=&quot;preprocessor&quot;&gt;#include &amp;lt;iostream&amp;gt;&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-cpp&quot;&gt;&lt;span class=&quot;preprocessor&quot;&gt;#&lt;span class=&quot;keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;/span&gt;
 
-&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; main()
-{
+&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;
+&lt;/span&gt;{
   &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;::&lt;span class=&quot;built_in&quot;&gt;cout&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class=&quot;string&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;::endl;
   &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&quot;c-sharp&quot;&gt;C-sharp&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-cs&quot;&gt;class ExampleClass
+&lt;pre&gt;&lt;code class=&quot;lang-cs&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;ExampleClass&lt;/span&gt;
 {
-    &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; Main()
-    {
+    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Main&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)
+    &lt;/span&gt;{
         System.Console.WriteLine(&lt;span class=&quot;string&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;);
     }
 }
@@ -112,8 +112,8 @@ The theme used is tomorrow, you can find more themes &lt;a href=&quot;http://jmb
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&quot;java&quot;&gt;Java&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-java&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;HelloWorld&lt;/span&gt; {&lt;/span&gt;
-   &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;(String[] args) {
+&lt;pre&gt;&lt;code class=&quot;lang-java&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;HelloWorld&lt;/span&gt; &lt;/span&gt;{
+   &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;{
        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;);
    }
 }
