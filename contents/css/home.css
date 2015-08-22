@@ -1,0 +1,82 @@
+.content-wrap {
+  margin: 0;
+  padding: 2rem;
+}
+/* aside */
+
+aside div#user_meta {
+  padding: .5em;
+  text-align: center;
+}
+
+aside div#user_meta h2 {
+  margin: 15px 0 5px 0;
+}
+
+aside div#user_meta p {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+}
+
+aside div#user_meta ul {
+  margin: .5em 0 0 0;
+  padding-left: 0;
+  font-size: 16px;
+  list-style-type: none;
+}
+
+aside div#user_meta ul li {
+  display: inline;
+  line-height: 3em;
+}
+
+aside div#user_meta ul li a {
+  padding: 5px 15px 5px 15px;
+  border: 3px solid #eeeeee;
+  border-radius: 15px;
+  -moz-border-radius: 1olid;
+  }
+  aside h2 {
+5px;
+  -webkit-border-radius: 15px;
+  color: #999999;
+}
+
+@media screen and (min-width: 1024px) {
+  aside {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: #eeeeee 1px solid;
+  }
+  aside .logo {
+    margin: 1rem;
+  }
+  aside .header h1 {
+    font-size: 1.5em;
+  }
+  aside .header .description {
+    font-size: .8em;
+  }
+  aside div#user_meta {
+    max-width: 192px;olid;
+  }
+  aside h2 {
+
+    text-align: right;
+  }
+  aside div#user_meta ul li {
+    display: block;
+  }
+  #content {
+    width: 75%;
+    position: relative;
+    top: 0;
+    left: 25%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
+
