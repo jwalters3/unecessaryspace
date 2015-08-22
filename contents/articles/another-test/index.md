@@ -38,6 +38,29 @@ class Human extends Monkey
     print ['yolo' unless i % 3] + ['swag' unless i % 5] or i for i in [1..100]
 ```
 
+### Rust
+```rust
+use std;
+
+fn main() {
+  let program = "+ + * - /";
+  let mut accumulator = 0;
+
+  for token in program.chars() {
+    match token {
+      '+' => accumulator += 1,
+      '-' => accumulator -= 1,
+      '*' => accumulator *= 2,
+      '/' => accumulator /= 2,
+      _ => { /* ignore everything else */ }
+    }
+  }
+
+  println!("The program \"{}\" calculates the value {}",
+      program, accumulator);
+}
+```
+
 ### C
 
 ```c
