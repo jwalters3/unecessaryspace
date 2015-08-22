@@ -12,7 +12,7 @@ body {
 }
 
 .content-wrap {
-  width: 34em;
+  max-width: 34em;
   margin: 0 auto;
 }
 
@@ -83,10 +83,6 @@ hr {
 
 /* page header */
 
-.header {
-  margin: 3em 0 5em;
-}
-
 .header h1 {
   font-size: 2.6em;
   text-align: center;
@@ -130,12 +126,11 @@ body.article-detail > header {
 /* page footer */
 
 footer {
-  margin: 3em 0;
+  margin: 1em 0;
 }
 
 footer .nav {
   text-align: center;
-  margin-top: 5em;
   margin-bottom: 3.5em;
 }
 
@@ -146,17 +141,10 @@ footer .nav a {
 }
 
 footer .about {
+  text-align: center;
   border-top: 1px dashed #d2d2d2;
   padding: 2.2em 3em;
   font-size: 0.7em;
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  -ms-column-count: 3;
-  column-count: 3;
-  -webkit-column-gap: 2em;
-  -moz-column-gap: 2em;
-  -ms-column-gap: 2em;
-  column-gap: 2em;
 }
 
 footer .copy {
@@ -173,7 +161,7 @@ footer .copy, footer .copy a {
 /* article */
 
 .article {
-  margin: 3em 0 4em;
+  margin: 1em 0 4em;
 }
 
 .article header {
@@ -193,7 +181,7 @@ footer .copy, footer .copy a {
 }
 
 .article header .date {
-  text-align: center;
+  text-align: center;olid;
   font-size: 0.8em;
   margin-top: -0.7em;
 }
@@ -205,6 +193,10 @@ footer .copy, footer .copy a {
 
 .article.intro .content p {
   display: inline;
+}article header .date {
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: -0.7em;
 }
 
 .article.intro .content .more {
@@ -238,7 +230,11 @@ footer .copy, footer .copy a {
 .archive h2 {
   font-size: 2em;
   margin: 0;
-  margin-left: 6.1em;
+  margin-left: 6.1em;article header .date {
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: -0.7em;
+}
   margin-bottom: 0.5em;
   font-style: italic;
 }
@@ -259,7 +255,10 @@ footer .copy, footer .copy a {
   margin-bottom: 0;
 }
 
-.archive a {
+.archive a {olid;
+  }
+  aside h2 {
+
   width: 21em;
   text-indent: 1em;
   white-space: nowrap;
@@ -295,7 +294,10 @@ footer .copy, footer .copy a {
 code {
   font-family: 'Anonymous Pro', monospace;
   font-size: 0.85em;
-  color: #000;
+  color: #000;olid;
+  }
+  aside h2 {
+
 }
 
 pre code {

@@ -9,16 +9,23 @@
     <link rel="alternate" href="http://unnecessary.space/feed.xml" type="application/rss+xml" title="Random terrible thoughts on everything.">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/home.css">
   </head>
   <body>
-    <header class="header">
-      <div class="content-wrap">
+    <aside>
+      <header class="header">
         <div class="logo">
           <h1><a href="http://unnecessary.space">Unnecessary Space</a></h1>
           <p class="description">Random terrible thoughts on everything.</p>
         </div>
-      </div>
-    </header>
+        <div id="user_meta">
+          <ul>
+            <li><a href="https://github.com/jwalters3">Github</a></li>
+            <li><a href="https://twitter.com/syachmed">Twitter</a></li>
+          </ul>
+        </div>
+      </header>
+    </aside>
     <div id="content">
       <div class="content-wrap">
         <article class="article intro">
@@ -54,19 +61,18 @@ Did you know that 9 out of 10 bloggers prefer to write in&nbsp;markdown?</p>
           </section>
         </article>
       </div>
-    </div>
-    <footer>
-      <div class="content-wrap">
-        <div class="nav"><a href="/archive.html">« Archives</a>
-        </div>
-        <section class="about"><p>At somepoint I’m going to put something meaningful here</p>
+      <footer>
+        <div class="content-wrap">
+          <div class="nav"><a href="/archive.html">« Archives</a>
+          </div>
+          <section class="about"><p>At somepoint I’m going to put something meaningful here.</p>
 
-        </section>
-        <section class="copy">
-          <p>&copy; 2015 Jeff Walters &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
-          </p>
-        </section>
-      </div>
-    </footer>
+          </section>
+          <section class="copy">
+            <p>&copy; 2015 Jeff Walters &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></p>
+          </section>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
