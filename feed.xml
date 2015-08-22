@@ -51,6 +51,27 @@ The theme used is tomorrow, you can find more themes &lt;a href=&quot;http://jmb
   &lt;span class=&quot;attribute&quot;&gt;speak&lt;/span&gt;:&lt;span class=&quot;function&quot;&gt; -&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt; [&lt;span class=&quot;string&quot;&gt;'yolo'&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;unless&lt;/span&gt; i % &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;] + [&lt;span class=&quot;string&quot;&gt;'swag'&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;unless&lt;/span&gt; i % &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;] &lt;span class=&quot;keyword&quot;&gt;or&lt;/span&gt; i &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; [&lt;span class=&quot;number&quot;&gt;1.&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;.100&lt;/span&gt;]
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;rust&quot;&gt;Rust&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-rust&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;use&lt;/span&gt; std;
+
+&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;(&lt;/span&gt;) {
+  &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; program = &lt;span class=&quot;string&quot;&gt;&quot;+ + * - /&quot;&lt;/span&gt;;
+  &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;mut&lt;/span&gt; accumulator = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;
+
+  &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; token in program.chars() {
+    &lt;span class=&quot;keyword&quot;&gt;match&lt;/span&gt; token {
+      &lt;span class=&quot;string&quot;&gt;'+'&lt;/span&gt; =&amp;gt; accumulator += &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,
+      &lt;span class=&quot;string&quot;&gt;'-'&lt;/span&gt; =&amp;gt; accumulator -= &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,
+      &lt;span class=&quot;string&quot;&gt;'*'&lt;/span&gt; =&amp;gt; accumulator *= &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,
+      &lt;span class=&quot;string&quot;&gt;'/'&lt;/span&gt; =&amp;gt; accumulator /= &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,
+      &lt;span class=&quot;number&quot;&gt;_&lt;/span&gt; =&amp;gt; { &lt;span class=&quot;comment&quot;&gt;/* ignore everything else */&lt;/span&gt; }
+    }
+  }
+
+  println!(&lt;span class=&quot;string&quot;&gt;&quot;The program \&quot;{}\&quot; calculates the value {}&quot;&lt;/span&gt;,
+      program, accumulator);
+}
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&quot;c&quot;&gt;C&lt;/h3&gt;
 &lt;pre&gt;&lt;code class=&quot;lang-c&quot;&gt;&lt;span class=&quot;preprocessor&quot;&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/span&gt;
 
