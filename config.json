@@ -25,5 +25,6 @@
   },
   "paginator": {
     "perPage": 3
-  }
+  },
+  "filenameTemplate": "/:year/:month/:day/:file.html"
 }
