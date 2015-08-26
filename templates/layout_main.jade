@@ -30,6 +30,8 @@ html(lang='en')
               a(href="https://github.com/jwalters3") Github
             li
               a(href="https://twitter.com/syachmed") Twitter
+            li
+              a(href=contents['about.md'].url) About
         
     div#content
       div.content-wrap
@@ -39,7 +41,7 @@ html(lang='en')
         div.content-wrap
           block footer
             section.about
-              !=contents['about.md'].html
+              !=contents['footer.md'].html
             section.copy
               p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; powered by&nbsp;
                 a(href='https://github.com/jnordberg/wintersmith') Wintersmith
