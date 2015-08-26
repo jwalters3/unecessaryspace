@@ -10,9 +10,9 @@
     <language>en</language>
     <item>
       <title>Well, we'll see how this goes...</title>
-      <link>http://unnecessary.space/articles/hello-world/</link>
+      <link>http://unnecessary.space/2015/08/16/</link>
       <pubDate>Sun, 16  Aug 2015 00:17:00 -0400</pubDate>
-      <guid isPermaLink="true">http://unnecessary.space/articles/hello-world/</guid>
+      <guid isPermaLink="true">http://unnecessary.space/2015/08/16/</guid>
       <author></author>
       <description>&lt;p&gt;First post. Probably not a lot going on here&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -22,9 +22,9 @@
     </item>
     <item>
       <title>Code and stuff!</title>
-      <link>http://unnecessary.space/articles/another-test/</link>
+      <link>http://unnecessary.space/2012/10/01/</link>
       <pubDate>Mon, 01 Oct 2012 15:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://unnecessary.space/articles/another-test/</guid>
+      <guid isPermaLink="true">http://unnecessary.space/2012/10/01/</guid>
       <author></author>
       <description>&lt;p&gt;Syntax highlighting with &lt;a href=&quot;http://softwaremaniacs.org/soft/highlight/en/&quot;&gt;highlight.js&lt;/a&gt;.
 The theme used is tomorrow, you can find more themes &lt;a href=&quot;http://jmblog.github.io/color-themes-for-highlightjs/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -140,40 +140,40 @@ The theme used is tomorrow, you can find more themes &lt;a href=&quot;http://jmb
     </item>
     <item>
       <title>Markdown syntax</title>
-      <link>http://unnecessary.space/articles/markdown-syntax/</link>
+      <link>http://unnecessary.space/2012/02/01/</link>
       <pubDate>Wed, 01 Feb 2012 19:00:00 -0500</pubDate>
-      <guid isPermaLink="true">http://unnecessary.space/articles/markdown-syntax/</guid>
+      <guid isPermaLink="true">http://unnecessary.space/2012/02/01/</guid>
       <author></author>
       <description>&lt;p&gt;Full markdown syntax taken from John Gruber’s &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Daring Fireball&lt;/a&gt;.
 Did you know that 9 out of 10 bloggers prefer to write in markdown?&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&quot;markdown-syntax&quot;&gt;Markdown: Syntax&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#overview&quot;&gt;Overview&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#philosophy&quot;&gt;Philosophy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#html&quot;&gt;Inline HTML&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#autoescape&quot;&gt;Automatic Escaping for Special Characters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#overview&quot;&gt;Overview&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#philosophy&quot;&gt;Philosophy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#html&quot;&gt;Inline HTML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#autoescape&quot;&gt;Automatic Escaping for Special Characters&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#block&quot;&gt;Block Elements&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#p&quot;&gt;Paragraphs and Line Breaks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#header&quot;&gt;Headers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#blockquote&quot;&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#list&quot;&gt;Lists&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#precode&quot;&gt;Code Blocks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#hr&quot;&gt;Horizontal Rules&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#block&quot;&gt;Block Elements&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#p&quot;&gt;Paragraphs and Line Breaks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#header&quot;&gt;Headers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#blockquote&quot;&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#list&quot;&gt;Lists&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#precode&quot;&gt;Code Blocks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#hr&quot;&gt;Horizontal Rules&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#span&quot;&gt;Span Elements&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#link&quot;&gt;Links&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#em&quot;&gt;Emphasis&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#code&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#img&quot;&gt;Images&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#span&quot;&gt;Span Elements&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#link&quot;&gt;Links&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#em&quot;&gt;Emphasis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#code&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#img&quot;&gt;Images&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#misc&quot;&gt;Miscellaneous&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#backslash&quot;&gt;Backslash Escapes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#autolink&quot;&gt;Automatic Links&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#misc&quot;&gt;Miscellaneous&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#backslash&quot;&gt;Backslash Escapes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://unnecessary.space/2012/02/01/#autolink&quot;&gt;Automatic Links&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -265,7 +265,7 @@ into &lt;code&gt;&amp;amp;amp;&lt;/code&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;AT&amp;amp;T
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Markdown will translate it to:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;AT&amp;amp;amp;T
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Similarly, because Markdown supports &lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#html&quot;&gt;inline HTML&lt;/a&gt;, if you use
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Similarly, because Markdown supports &lt;a href=&quot;http://unnecessary.space/2012/02/01/#html&quot;&gt;inline HTML&lt;/a&gt;, if you use
 angle brackets as delimiters for HTML tags, Markdown will treat them as
 such. But if you write:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;4 &amp;lt; 5
@@ -295,7 +295,7 @@ character in a paragraph into a &lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt; ta
 end a line with two or more spaces, then type return.&lt;/p&gt;
 &lt;p&gt;Yes, this takes a tad more effort to create a &lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;, but a simplistic
 “every line break is a &lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;“ rule wouldn’t work for Markdown.
-Markdown’s email-style &lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#blockquote&quot;&gt;blockquoting&lt;/a&gt; and multi-paragraph &lt;a href=&quot;http://unnecessary.space/articles/markdown-syntax/#list&quot;&gt;list items&lt;/a&gt;
+Markdown’s email-style &lt;a href=&quot;http://unnecessary.space/2012/02/01/#blockquote&quot;&gt;blockquoting&lt;/a&gt; and multi-paragraph &lt;a href=&quot;http://unnecessary.space/2012/02/01/#list&quot;&gt;list items&lt;/a&gt;
 work best – and look better – when you format them with hard breaks.&lt;/p&gt;
 &lt;h3 id=&quot;header&quot;&gt;Headers&lt;/h3&gt;
 
