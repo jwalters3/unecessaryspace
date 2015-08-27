@@ -32,7 +32,12 @@ aside div#user_meta ul li a {
   border-radius: 15px;
   -moz-border-radius: 1olid;
   }
-  aside h2 {
+
+aside div#user_meta ul li a:hover {
+ background-color: #eee;
+}
+
+aside h2 {
 5px;
   -webkit-border-radius: 15px;
   color: #999999;
