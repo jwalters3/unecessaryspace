@@ -5,7 +5,7 @@ date: 2015-09-13 23:09
 template: article.jade
 ---
 
-I participated in AT&T's mobile app hackathon and my team ended up winning "Best App From a Women Led Team" as a part of Team Little Librarian.
+I participated in AT&T's mobile app hackathon over the weekend and ended up winning "Best App From a Women Led Team" as a part of Team Little Librarian.
 
 <span class="more"></span>
 
