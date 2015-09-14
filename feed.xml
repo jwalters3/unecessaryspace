@@ -5,9 +5,80 @@
     <atom:link href="http://unnecessary.space/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://unnecessary.space</link>
     <description>Random terrible thoughts on everything.</description>
-    <pubDate>Sun, 16  Aug 2015 00:17:00 -0400</pubDate>
+    <pubDate>Sun, 13 Sep 2015 23:09:00 -0400</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>AT&amp;T Mobile App Hackathon and Results</title>
+      <link>http://unnecessary.space/2015/09/13/</link>
+      <pubDate>Sun, 13 Sep 2015 23:09:00 -0400</pubDate>
+      <guid isPermaLink="true">http://unnecessary.space/2015/09/13/</guid>
+      <author></author>
+      <description>&lt;p&gt;I participated in AT&amp;amp;T’s mobile app hackathon and my team ended up winning “Best App From a Women Led Team” as a part of Team Little Librarian.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Team Little librarian formed to find a modern solution to keeping track of the content to &lt;a href=&quot;http://littlefreelibrary.org/&quot;&gt;little free libraries&lt;/a&gt; 
+and create an IoT solution for them. In the scope of the hackathon we decided to build a mobile app
+and a hardware solution.  &lt;/p&gt;
+&lt;h3 id=&quot;mobile-app&quot;&gt;Mobile App&lt;/h3&gt;
+&lt;p&gt;We started with a mobile app written in &lt;a href=&quot;https://touch.sencha.com&quot;&gt;Sencha Touch&lt;/a&gt;.  The app presents
+you with the locations of libraries. You can select each item on the map to find more info on each
+of these libraries. All of the data comes from the salesforce api (lol) that the the little free libary
+website pulls it’s info from.  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/articles/attmobilehackathon15/landing.jpg&quot; alt=&quot;landing page&quot;&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/articles/attmobilehackathon15/library.jpg&quot; alt=&quot;library info&quot;&gt;&lt;/p&gt;
+&lt;p&gt;From there we set out to track the books in the library. To do this we used AT&amp;amp;T’s &lt;a href=&quot;https://m2x.att.com/&quot;&gt;m2x&lt;/a&gt; iot platform.
+Where we employed a novel concept of making the books devices in the cloud and the mobile app the
+communication platform that tells the cloud where the devices are sent.  Interestingly we were able
+to implement this better than we initially thought and tracked books in the app without spinning up
+a database for ourselves.  To identify books by their isbn’s we brought in google books’ api and
+used that for cover images as well.  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/articles/attmobilehackathon15/books.jpg&quot; alt=&quot;book list page&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;hardware&quot;&gt;Hardware&lt;/h3&gt;
+&lt;p&gt;The hardware solution used &lt;a href=&quot;http://lowpowerlab.com/moteino/&quot;&gt;monteinos&lt;/a&gt;, a arduino clone with a built-in RF module. We used a simple magnetic door
+sensor to discover when the door to the libray was opened the node monteino would send an encrypted
+message to the gateway monteino.  Using the RFM69 library sending that message was as easy as:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-c&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// if the button state has changed:&lt;/span&gt;
+    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (reading != buttonState) {
+
+      buttonState = reading;
+        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (buttonState == HIGH) {
+            Serial.print(&lt;span class=&quot;string&quot;&gt;&quot;Sending[&quot;&lt;/span&gt;);
+            Serial.print(&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;);
+            Serial.print(&lt;span class=&quot;string&quot;&gt;&quot;]: &quot;&lt;/span&gt;);
+            &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(byte i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; &lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;; i++)
+              Serial.print((&lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt;)openPayload[i]);
+
+            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (radio.sendWithRetry(GATEWAYID, openPayload, &lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;))
+              Serial.print(&lt;span class=&quot;string&quot;&gt;&quot; ok!&quot;&lt;/span&gt;);
+            &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; Serial.print(&lt;span class=&quot;string&quot;&gt;&quot; nothing...&quot;&lt;/span&gt;);
+            Serial.println();
+            Blink(LED,&lt;span class=&quot;number&quot;&gt;30&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;);
+        } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
+            Serial.print(&lt;span class=&quot;string&quot;&gt;&quot;Sending[&quot;&lt;/span&gt;);
+            Serial.print(&lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;);
+            Serial.print(&lt;span class=&quot;string&quot;&gt;&quot;]: &quot;&lt;/span&gt;);
+            &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(byte i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; &lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;; i++)
+              Serial.print((&lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt;)closePayload[i]);
+
+            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (radio.sendWithRetry(GATEWAYID, closePayload, &lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;))
+              Serial.print(&lt;span class=&quot;string&quot;&gt;&quot; ok!&quot;&lt;/span&gt;);
+            &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; Serial.print(&lt;span class=&quot;string&quot;&gt;&quot; nothing...&quot;&lt;/span&gt;);
+            Serial.println();
+            Blink(LED,&lt;span class=&quot;number&quot;&gt;30&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;);
+        }
+
+        &lt;span class=&quot;comment&quot;&gt;// set the LED:&lt;/span&gt;
+        digitalWrite(LED, buttonState);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;On the other end we had another gateway monteino attached to a small computer (raspberry pi)
+running a python script waiting for messages on the serial port.  When the message for open would
+come it would send a request to m2x updating the status.  &lt;/p&gt;
+&lt;p&gt;Pretty neat stuff… We were able to make a nearly complete solution using a wide range of
+technologies in under 24 hours.  The complete source is on github. &lt;/p&gt;
+&lt;p&gt;-Jeff&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Well, we'll see how this goes...</title>
       <link>http://unnecessary.space/2015/08/16/</link>
